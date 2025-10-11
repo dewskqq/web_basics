@@ -1,0 +1,36 @@
+  body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+      padding: 10px;
+    }
+    .form-row {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .form-row label {
+      width: 150px;
+      margin-right: 10px;
+      text-align: right;
+    }
+    .form-row input,
+    .form-row textarea {
+      flex: 1;
+      padding: 4px;
+      font-size: 14px;
+    }
+    .button-group {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-end; 
+      gap: 10px;
+    }
+    button {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+    h2
+    {
+      padding: 0px 150px;
+    }

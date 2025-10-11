@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Моя перша HTML-форма</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Моя перша HTML-форма</h2>
+  <form method="post" action="https://httpbin.org/post">
+  <div class="form-row">
+    <label for="username">Ім'я:</label>
+    <input type="text" id="username" name="user_name" required>
+  </div>
+  
+  <div class="form-row">
+    <label for="birthdate">Дата народження:</label>
+    <input type="date" id="birthdate" name="user_birthdate" required>
+  </div>
+
+  <div class="form-row">
+    <label for="email">Імейл:</label>
+    <input type="email" id="email" name="user_email" required>
+  </div>
+
+  <div class="form-row">
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" name="user_message" rows="3"></textarea>
+  </div>
+
+  <div class="button-group">
+    <button type="submit">Надіслати</button>
+    <button type="reset">Очистити</button>
+  </div>
+
+      <fieldset class="form-group">
+        <legend>Ваші улюблені напої:</legend>
+        <label><input type="checkbox" name="favorite_drinks" value="кава"> Кава</label>
+        <label><input type="checkbox" name="favorite_drinks" value="чай"> Чай</label>
+        <label><input type="checkbox" name="favorite_drinks" value="сік"> Сік</label>
+        <label><input type="checkbox" name="favorite_drinks" value="вода"> Вода</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>Моя національність:</legend>
+        <label><input type="radio" name="nationality" value="українець" required> Українець</label>
+        <label><input type="radio" name="nationality" value="угорець"> Угорець</label>
+        <label><input type="radio" name="nationality" value="інше"> Інше</label>
+      </fieldset>
+
+  <div class="image-block">
+    <h3>Фото</h3>
+    <picture>
+      <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+      <source media="(min-width: 469px)" srcset="https://picsum.photos/700/400">
+      <img src="https://picsum.photos/600/400" alt="Адаптивне зображення">
+    </picture>
+  </div>
+</form>
+</body>
+</html>
